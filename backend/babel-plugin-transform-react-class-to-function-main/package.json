@@ -1,0 +1,41 @@
+{
+  "name": "babel-plugin-transform-react-class-to-function",
+  "description": "A Babel 7 plugin which transforms React component classes into functions",
+  "version": "1.2.2",
+  "license": "MIT",
+  "homepage": "https://github.com/remcohaszing/babel-plugin-transform-react-class-to-function#readme",
+  "author": "Remco Haszing <remcohaszing@gmail.com>",
+  "main": "lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remcohaszing/babel-plugin-transform-react-class-to-function.git"
+  },
+  "bugs": {
+    "url": "https://github.com/remcohaszing/babel-plugin-transform-react-class-to-function/issues"
+  },
+  "keywords": [
+    "babel",
+    "babel-plugin",
+    "react"
+  ],
+  "scripts": {
+    "start": "jest --watchAll",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@babel/helper-plugin-utils": "^7.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/eslint-parser": "^7.0.0",
+    "@babel/eslint-plugin": "^7.0.0",
+    "@babel/helper-plugin-test-runner": "^7.0.0",
+    "babel-plugin-transform-react-class-to-function": ".",
+    "eslint": "^7.0.0",
+    "eslint-config-remcohaszing": "^3.0.0",
+    "eslint-plugin-jest": "^25.0.0",
+    "eslint-plugin-jest-formatting": "^3.0.0",
+    "jest": "^27.0.0",
+    "prettier": "^2.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parserOpts": {
+    "plugins": ["classProperties", ["decorators", { "decoratorsBeforeExport": false }], "jsx"]
+  },
+  "plugins": ["babel-plugin-transform-react-class-to-function"]
+}

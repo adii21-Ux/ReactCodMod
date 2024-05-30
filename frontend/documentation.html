@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babel Plugin: Transform React Class to Function</title>
+    <link rel="stylesheet" href="./css/documentation.css">
+</head>
+<body>
+    <header>
+        <h1>Babel Plugin: Transform React Class to Function</h1>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>This Babel plugin transforms React class components into function components. It helps modernize your codebase by leveraging React hooks, making your code simpler and more readable.</p>
+        </section>
+        <section id="example">
+            <h2>Example</h2>
+            <p>Before:</p>
+            <pre><code>{
+`import React, { Component } from 'react';
+
+class HelloWorld extends Component {
+  render() {
+    return <div>Hello, world!</div>;
+  }
+}
+
+export default HelloWorld;`}</code></pre>
+            <p>After:</p>
+            <pre><code>{
+`import React from 'react';
+
+function HelloWorld() {
+  return <div>Hello, world!</div>;
+}
+
+export default HelloWorld;`}</code></pre>
+        </section>
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Converts class components to functional components</li>
+                <li>Preserves component logic and state management</li>
+                <li>Supports React hooks for state and lifecycle management</li>
+                <li>Reduces boilerplate code in React components</li>
+            </ul>
+        </section>
+        <section id="limitations">
+            <h2>Limitations</h2>
+            <p>While this plugin handles many cases, there are some limitations:</p>
+            <ul>
+                <li>Does not automatically convert lifecycle methods to hooks</li>
+                <li>Requires manual adjustment for complex state management and side effects</li>
+                <li>May not support certain legacy patterns used in older React codebases</li>
+            </ul>
+        </section>
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <p>The plugin uses Babel's AST (Abstract Syntax Tree) to analyze and transform React class components. Here's a simplified explanation:</p>
+            <ul>
+                <li>Identifies class components by detecting class declarations extending React.Component or Component.</li>
+                <li>Extracts state and lifecycle methods, converting them into hooks where applicable.</li>
+                <li>Replaces the render method with a function returning JSX.</li>
+            </ul>
+        </section>
+        <section id="contributing">
+            <h2>Contributing</h2>
+            <p>Contributions are welcome! Please see the <a href="https://github.com/remcohaszing/babel-plugin-transform-react-class-to-function#contributing">contributing guidelines</a> for more details.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Babel Plugin Authors</p>
+    </footer>
+</body>
+</html>
